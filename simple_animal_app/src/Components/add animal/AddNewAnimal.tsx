@@ -2,7 +2,7 @@
 import { ReactNode, useState } from "react"
 import ReactDOM from "react-dom";
 import Modal from "./add new animal modal/AddNewMadal";
-
+import styles from './add new animal modal/AddNewModal.module.css'
 interface PortalProps {
     children: ReactNode;
     target: HTMLElement;
@@ -19,7 +19,12 @@ const AddNewAnimal = () => {
 
     return (
             <div>
-                <button onClick={()=> {setOpen(true); console.log('clicked');
+                <button 
+                 className={styles.submitBtn}
+                onClick={()=> 
+                  {setOpen(true); 
+                  console.log('clicked');
+                 
                 }}> Add new animal</button>
                 <Modal open={open} onClose={()=> setOpen(false)} />
                 </div>

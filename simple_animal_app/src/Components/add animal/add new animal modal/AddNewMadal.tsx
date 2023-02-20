@@ -40,7 +40,9 @@ const Modal = (props: Modal) => {
     <div className={styles.modalAround}>
       <div className={styles.modal}>
         <form onSubmit={onSubmit} className={styles.modal}>
-          <button onClick={props.onClose}>✕</button>
+          <button 
+          onClick={props.onClose}
+          className={styles.submitBtn_48} >✕</button>
           <label>
             Animal name:
             <input

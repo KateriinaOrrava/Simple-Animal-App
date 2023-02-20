@@ -7,7 +7,8 @@
       "default",
       {
         "ignore": [
-          "backface-visibility"
+          "backface-visibility",
+          "-webkit-text-size-adjust"
         ]
       }
     ]
