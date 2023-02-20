@@ -1,0 +1,50 @@
+.app {
+  display: flex;
+  flex-direction:column;
+
+  background-color: rgb(196, 183, 167);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+  .App{
+    width: 100%;
+  }
+
+  .CardWithAnimal{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(118, 117, 118, 0.1);
+    padding:10px;
+    gap: 10px;
+    border-radius: 10px;
+  }
+  
+  .animalImg{
+    width: 100%;
+  }
+  .Animals{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  form{
+    width: 100%;
+  }
+  .select_type {
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  }
