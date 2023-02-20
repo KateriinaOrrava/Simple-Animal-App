@@ -1,17 +1,16 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
-import animalReducer from './animalSlice'
+import { configureStore, createSlice } from '@reduxjs/toolkit';
+import animalReducer from './animalSlice';
 
 const store = configureStore({
-    reducer: {
-      animal: animalReducer,
-    }
-  })
+  reducer: {
+    animal: animalReducer,
+  },
+});
 
-    export default store
+export default store;
 
+// tips visam lielajam objektam
+export type RootState = ReturnType<typeof store.getState>;
 
-    // tips visam lielajam objektam
-    export type RootState = ReturnType<typeof store.getState>
-
-    // definēts tips dispatčiem
-    export type AppDispatch = typeof store.dispatch
+// definēts tips dispatčiem
+export type AppDispatch = typeof store.dispatch;

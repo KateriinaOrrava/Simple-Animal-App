@@ -1,0 +1,16 @@
+button{
+    color:white;
+    appearance: none;
+    background-color: #3f3434;
+    border-width: 0;
+    box-sizing: border-box;
+  }
+  .button{
+    color:white;
+    appearance: none;
+    background-color: #3f3434;
+    border-width: 0;
+    padding:10px 15px;
+    box-sizing: border-box;
+    cursor:pointer;
+  }

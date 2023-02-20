@@ -42,7 +42,7 @@ const Modal = (props: Modal) => {
         <form onSubmit={onSubmit} className={styles.modal}>
           <button 
           onClick={props.onClose}
-          className={styles.submitBtn_48} >✕</button>
+          className={styles.button} >✕</button>
           <label>
             Animal name:
             <input
@@ -67,7 +67,10 @@ const Modal = (props: Modal) => {
 
           <label>
             Type:
-            <select required onChange={(e) => setAnimalType(e.target.value)}>
+            <select 
+            required 
+            className={styles.select_type}
+            onChange={(e) => setAnimalType(e.target.value)}>
               <option value="">Select your option</option>
               <option value="mammal">mammal</option>
               <option value="bird">bird</option>
@@ -78,7 +81,7 @@ const Modal = (props: Modal) => {
               <option value="all">all</option>
             </select>
           </label>
-          <input type="submit" value="Submit" className={styles.submitBtn_48} />
+          <input type="submit" value="Submit" className={styles.button} />
         </form>
       </div>
     </div>,

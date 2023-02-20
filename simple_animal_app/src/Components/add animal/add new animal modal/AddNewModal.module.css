@@ -26,10 +26,24 @@
     z-index: 1000;
 
 }
-button{
+.button{
   color:white;
   appearance: none;
-  background-color: #FFFFFF;
+  background-color: #3f3434;
   border-width: 0;
+  padding:10px 15px;
   box-sizing: border-box;
+}
+.select_type {
+
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
 }
