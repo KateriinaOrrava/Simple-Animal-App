@@ -35,7 +35,6 @@
   box-sizing: border-box;
 }
 .select_type {
-
   min-width: 15ch;
   max-width: 30ch;
   border: 1px solid var(--select-border);
